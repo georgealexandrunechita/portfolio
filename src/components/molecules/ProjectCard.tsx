@@ -1,4 +1,4 @@
-import { Github, ExternalLink } from 'lucide-react'
+import { ExternalLink, Code2 } from 'lucide-react'
 import { Tag } from '../atoms/Tag'
 import { Button } from '../atoms/Button'
 
@@ -48,7 +48,7 @@ export function ProjectCard({ title, description, tech, image, repo, demo, featu
               size="sm"
               onClick={() => window.open(repo, '_blank')}
             >
-              <Github size={14} /> Código
+              <Code2 size={14} /> Código
             </Button>
           )}
           {demo && (
