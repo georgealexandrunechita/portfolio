@@ -1,6 +1,6 @@
 export const projects = [
   {
-    title: "EcoRun Sevilla",
+    title: "Eco Run Sevilla",
     description: "Plataforma gamificada de running para Sevilla. Retos, ecopuntos, rankings y seguimiento de progreso con impacto ecológico.",
     tech: ["React", "Node.js", "Express", "MySQL", "Docker", "Tailwind CSS", "JWT"],
     image: "/projects/ecorun.png",
@@ -11,7 +11,7 @@ export const projects = [
     date: "2026-02",
   },
   {
-    title: "Bikeforrefugees",
+    title: "Bike for Refugees",
     description: "Proyecto solidario web sobre bicicletas para refugiados.",
     tech: ["HTML", "CSS"],
     image: "/projects/bikeforrefugees.png",
@@ -22,7 +22,7 @@ export const projects = [
     date: "2026-05",
   },
   {
-    title: "Toyrobotstyle",
+    title: "Toy Robot",
     description: "Proyecto creativo de interacciones y estilo con CSS/JS.",
     tech: ["JavaScript", "CSS"],
     image: "/projects/toyrobotstyle.png",
@@ -33,20 +33,22 @@ export const projects = [
     date: "2026-02",
   },
   {
-    title: "Gestorentreno",
+    title: "Gestor de Entreno",
     description: "Gestor de entrenamientos personales en Python.",
     tech: ["Python"],
     image: "/projects/gestorentreno.png",
+    video: "https://res.cloudinary.com/dcp7o3atw/video/upload/v1779361601/15406868_1920_1080_25fps_j7sgc7.mp4",
     repo: "https://github.com/georgealexandrunechita/gestorentreno",
     demo: "",
     featured: false,
     date: "2026-03",
   },
   {
-    title: "ApiRestMonumentos",
+    title: "Api Rest Monumentos",
     description: "API REST sobre monumentos históricos.",
     tech: ["Python", "FastAPI"],
     image: "/projects/apirestmonumentos.png",
+    video: "https://res.cloudinary.com/dcp7o3atw/video/upload/v1779361780/15029082_3840_2160_25fps_ivehuu.mp4",
     repo: "https://github.com/georgealexandrunechita/apirestmonumentos",
     demo: "",
     featured: false,
