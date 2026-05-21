@@ -18,7 +18,7 @@ export function Footer() {
         </div>
 
         <span className="text-text-faint text-xs">
-          © {year} Georgi Nechita
+          © {year} Alexandru Nechita
         </span>
       </div>
     </footer>

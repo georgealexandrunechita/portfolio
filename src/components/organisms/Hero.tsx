@@ -24,7 +24,7 @@ export function Hero() {
         <FadeIn delay={0.1}>
           <div className="flex flex-col gap-2">
             <h1 className="text-4xl sm:text-6xl font-bold text-text tracking-tight">
-              Georgi Nechita
+              Alexandru Nechita
             </h1>
             <p className="text-xl sm:text-2xl font-medium text-accent">
               Full-Stack Developer

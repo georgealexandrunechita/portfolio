@@ -27,7 +27,7 @@ export function ProjectCard({ title, description, tech, image, repo, demo, featu
           alt={title}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
           onError={(e) => {
-            (e.currentTarget as HTMLImageElement).src = '/projects/placeholder.png'
+            (e.currentTarget as HTMLImageElement).src = '/projects/placeholder.svg'
           }}
         />
       </div>
