@@ -9,7 +9,7 @@ export function PageLayout({ children }: PageLayoutProps) {
   return (
     <div className="min-h-screen flex flex-col bg-bg text-text">
       <Navbar />
-      <main className="flex-1">
+      <main className="flex-1 pt-16">
         {children}
       </main>
       <Footer />
