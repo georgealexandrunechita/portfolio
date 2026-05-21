@@ -1,9 +1,18 @@
-const VIDEO_URL = 'https://res.cloudinary.com/dcp7o3atw/video/upload/v1779359465/14520076_1920_1080_24fps_hvtpye.mp4'
+import { useEffect, useRef } from 'react'
+
+const VIDEO_URL = 'https://res.cloudinary.com/dcp7o3atw/video/upload/v1779365337/12802106_3840_2160_30fps_bbtaij.mp4'
 
 export function VideoBackground() {
+  const videoRef = useRef<HTMLVideoElement>(null)
+
+  useEffect(() => {
+    if (videoRef.current) videoRef.current.playbackRate = 1
+  }, [])
+
   return (
     <div className="fixed inset-0 z-0 overflow-hidden">
       <video
+        ref={videoRef}
         autoPlay
         muted
         loop
