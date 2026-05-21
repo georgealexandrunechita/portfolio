@@ -2,15 +2,9 @@ import { ArrowDown } from 'lucide-react'
 import { Button } from '../atoms/Button'
 import { SocialLink } from '../atoms/SocialLink'
 import { FadeIn } from '../atoms/FadeIn'
-
 export function Hero() {
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 text-center">
-
-      {/* Background glow */}
-      <div className="absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-accent/5 blur-[120px]" />
-      </div>
 
       <div className="flex flex-col items-center gap-6 max-w-2xl">
 
