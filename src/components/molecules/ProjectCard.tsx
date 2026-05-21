@@ -15,7 +15,7 @@ interface ProjectCardProps {
 
 export function ProjectCard({ title, description, tech, image, video, repo, demo, featured }: ProjectCardProps) {
   return (
-    <article className="group relative flex flex-col rounded-xl overflow-hidden bg-surface border border-border transition-all duration-300 hover:-translate-y-1 hover:border-t-accent hover:shadow-[0_0_24px_var(--color-accent-glow),0_4px_24px_rgba(0,0,0,0.4)]">
+    <article className="group relative flex flex-col rounded-sm overflow-hidden bg-surface border border-border transition-all duration-300 hover:-translate-y-1 hover:border-t-accent hover:shadow-[0_0_24px_var(--color-accent-glow),0_4px_24px_rgba(0,0,0,0.4)]">
       {featured && (
         <span className="absolute top-3 right-3 z-10 text-xs font-semibold px-2 py-0.5 rounded-full bg-accent text-bg">
           Destacado

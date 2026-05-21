@@ -17,7 +17,7 @@ export function SkillsGrid() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {skills.map(({ category, skills: categorySkills }, i) => (
             <FadeIn key={category} delay={i * 0.1}>
-              <div className="flex flex-col gap-4 p-5 rounded-xl bg-surface border border-border">
+              <div className="flex flex-col gap-4 p-5 rounded-sm bg-surface border border-border">
                 <h3 className="text-text font-semibold text-sm uppercase tracking-wider">
                   {category}
                 </h3>
