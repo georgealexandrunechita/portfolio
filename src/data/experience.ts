@@ -11,7 +11,7 @@ export const experience = [
     type: "experience" as const,
     title: "Full-Stack Developer",
     institution: "Kong Consulting",
-    location: "Remote",
+    location: "La Cartuja, Sevilla",
     period: "En curso",
     description: "Desarrollo full-stack con C#, .NET, WPF, SQL Server, Node.js y Docker. Metodología Scrum con Trello.",
   },
