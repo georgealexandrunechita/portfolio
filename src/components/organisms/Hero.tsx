@@ -1,6 +1,7 @@
 import { ArrowDown } from 'lucide-react'
 import { Button } from '../atoms/Button'
 import { SocialLink } from '../atoms/SocialLink'
+import { FadeIn } from '../atoms/FadeIn'
 
 export function Hero() {
   return (
@@ -13,52 +14,57 @@ export function Hero() {
 
       <div className="flex flex-col items-center gap-6 max-w-2xl">
 
-        {/* Status badge */}
-        <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-accent/30 bg-accent-glow text-accent text-xs font-medium">
-          <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
-          Disponible para trabajar
-        </span>
+        <FadeIn delay={0}>
+          <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-accent/30 bg-accent-glow text-accent text-xs font-medium">
+            <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
+            Disponible para trabajar
+          </span>
+        </FadeIn>
 
-        {/* Name */}
-        <div className="flex flex-col gap-2">
-          <h1 className="text-4xl sm:text-6xl font-bold text-text tracking-tight">
-            Georgi Nechita
-          </h1>
-          <p className="text-xl sm:text-2xl font-medium text-accent">
-            Full-Stack Developer
+        <FadeIn delay={0.1}>
+          <div className="flex flex-col gap-2">
+            <h1 className="text-4xl sm:text-6xl font-bold text-text tracking-tight">
+              Georgi Nechita
+            </h1>
+            <p className="text-xl sm:text-2xl font-medium text-accent">
+              Full-Stack Developer
+            </p>
+          </div>
+        </FadeIn>
+
+        <FadeIn delay={0.2}>
+          <p className="text-text-muted text-base sm:text-lg leading-relaxed max-w-xl">
+            Desarrollador web full-stack con experiencia en React, Node.js y .NET.
+            Apasionado por construir productos con impacto real.
           </p>
-        </div>
+        </FadeIn>
 
-        {/* Description */}
-        <p className="text-text-muted text-base sm:text-lg leading-relaxed max-w-xl">
-          Desarrollador web full-stack con experiencia en React, Node.js y .NET.
-          Apasionado por construir productos con impacto real.
-        </p>
+        <FadeIn delay={0.3}>
+          <div className="flex flex-wrap gap-3 justify-center">
+            <Button
+              variant="primary"
+              size="lg"
+              onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              Ver proyectos
+            </Button>
+            <Button
+              variant="secondary"
+              size="lg"
+              onClick={() => window.open('mailto:georgealexandrunechita@gmail.com')}
+            >
+              Contacto
+            </Button>
+          </div>
+        </FadeIn>
 
-        {/* Buttons */}
-        <div className="flex flex-wrap gap-3 justify-center">
-          <Button
-            variant="primary"
-            size="lg"
-            onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
-          >
-            Ver proyectos
-          </Button>
-          <Button
-            variant="secondary"
-            size="lg"
-            onClick={() => window.open('mailto:georgealexandrunechita@gmail.com')}
-          >
-            Contacto
-          </Button>
-        </div>
-
-        {/* Social links */}
-        <div className="flex gap-6">
-          <SocialLink platform="github"   href="https://github.com/georgealexandrunechita" />
-          <SocialLink platform="linkedin" href="https://linkedin.com/in/georgealexandrunechita" />
-          <SocialLink platform="email"    href="georgealexandrunechita@gmail.com" />
-        </div>
+        <FadeIn delay={0.4}>
+          <div className="flex gap-6">
+            <SocialLink platform="github"   href="https://github.com/georgealexandrunechita" />
+            <SocialLink platform="linkedin" href="https://linkedin.com/in/georgealexandrunechita" />
+            <SocialLink platform="email"    href="georgealexandrunechita@gmail.com" />
+          </div>
+        </FadeIn>
       </div>
 
       {/* Scroll indicator */}

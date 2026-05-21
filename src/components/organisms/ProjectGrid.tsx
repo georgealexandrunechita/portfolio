@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react'
 import { ProjectCard } from '../molecules/ProjectCard'
 import { Button } from '../atoms/Button'
+import { FadeIn } from '../atoms/FadeIn'
 import { projects } from '../../data/projects'
 
 const PAGE_SIZE = 6
@@ -35,11 +36,12 @@ export function ProjectGrid() {
     <section className="py-20 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto flex flex-col gap-10">
 
-        {/* Header */}
-        <div className="flex flex-col gap-2">
-          <span className="text-accent text-sm font-medium">Proyectos</span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-text">Todos los proyectos</h2>
-        </div>
+        <FadeIn>
+          <div className="flex flex-col gap-2">
+            <span className="text-accent text-sm font-medium">Proyectos</span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-text">Todos los proyectos</h2>
+          </div>
+        </FadeIn>
 
         {/* Filters */}
         <div className="flex flex-wrap gap-2">
