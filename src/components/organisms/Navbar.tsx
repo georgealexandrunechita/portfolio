@@ -26,7 +26,7 @@ export function Navbar() {
 
         {/* Logo */}
         <a href="/" className="text-text font-bold text-lg tracking-tight hover:text-accent transition-colors">
-          georgi<span className="text-accent">.</span>dev
+          alexnechita<span className="text-accent">.</span>dev
         </a>
 
         {/* Desktop links */}

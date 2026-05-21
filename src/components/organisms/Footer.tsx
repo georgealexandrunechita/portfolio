@@ -8,7 +8,7 @@ export function Footer() {
       <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
 
         <span className="text-text font-bold tracking-tight">
-          georgi<span className="text-accent">.</span>dev
+          alexnechita<span className="text-accent">.</span>dev
         </span>
 
         <div className="flex gap-6">

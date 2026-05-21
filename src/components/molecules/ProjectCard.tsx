@@ -7,12 +7,13 @@ interface ProjectCardProps {
   description: string
   tech: string[]
   image: string
+  video?: string
   repo: string
   demo: string
   featured?: boolean
 }
 
-export function ProjectCard({ title, description, tech, image, repo, demo, featured }: ProjectCardProps) {
+export function ProjectCard({ title, description, tech, image, video, repo, demo, featured }: ProjectCardProps) {
   return (
     <article className="group relative flex flex-col rounded-xl overflow-hidden bg-surface border border-border transition-all duration-300 hover:-translate-y-1 hover:border-t-accent hover:shadow-[0_0_24px_var(--color-accent-glow),0_4px_24px_rgba(0,0,0,0.4)]">
       {featured && (
@@ -22,14 +23,25 @@ export function ProjectCard({ title, description, tech, image, repo, demo, featu
       )}
 
       <div className="aspect-video w-full overflow-hidden bg-surface-2">
-        <img
-          src={image}
-          alt={title}
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-          onError={(e) => {
-            (e.currentTarget as HTMLImageElement).src = '/projects/placeholder.svg'
-          }}
-        />
+        {video ? (
+          <video
+            src={video}
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover"
+          />
+        ) : (
+          <img
+            src={image}
+            alt={title}
+            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            onError={(e) => {
+              (e.currentTarget as HTMLImageElement).src = '/projects/placeholder.svg'
+            }}
+          />
+        )}
       </div>
 
       <div className="flex flex-col flex-1 p-5 gap-3">
