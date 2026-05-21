@@ -40,6 +40,7 @@ export function Navbar() {
         <div className="hidden md:block">
           <Button
             variant="outline"
+            className="text-white border-white hover:bg-white/10"
             size="sm"
             onClick={() => window.open('mailto:georgealexandrunechita@gmail.com')}
           >
@@ -65,6 +66,7 @@ export function Navbar() {
           ))}
           <Button
             variant="outline"
+            className="text-white border-white hover:bg-white/10"
             size="sm"
             className="self-start"
             onClick={() => window.open('mailto:georgealexandrunechita@gmail.com')}
