@@ -1,4 +1,4 @@
-# Georgi Nechita — Portfolio
+# Alexandru Nechita — Portfolio
 
 Portfolio personal desarrollado con Vite + React + TypeScript + Tailwind CSS v4.
 
